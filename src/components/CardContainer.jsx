@@ -17,7 +17,7 @@ const CardContainer = () => {
     }
    ///**console.log(search, outside )*/
 
-   const filteredData = data.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
+   const filteredData = data.filter((item) => item.name.toLowerCase().includes(search.toLowerCase().trim()));
 
   return (
     <>
