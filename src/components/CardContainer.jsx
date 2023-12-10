@@ -25,6 +25,7 @@ const CardContainer = () => {
           placeholder="Search a player.."
         //   onChange= {(e) => console.log(e.target.value)}
         onChange= {handleChange}
+        type="search"
         />
          <Container className = "rounded-4 my-4 p-3 card-container">
             <Row className ="justify-content-center g-3">
