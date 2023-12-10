@@ -8,7 +8,7 @@ import PlayerCard from "./PlayerCard"
 
 const CardContainer = () => {
     // console.log(data)
-    const showImage =false
+    // const showImage =false
    
   return (
     <Container className = "rounded-4 my-4 p-3 card-container">
@@ -18,7 +18,8 @@ const CardContainer = () => {
         <Row className ="justify-content-center g-3">
             {data.map((data)=>(
                 <Col xl={3} lg={4} md={6}>
-                <PlayerCard {...data} showImage= {showImage}/>
+                {/* <PlayerCard {...data} showImage= {showImage}/> */}
+                <PlayerCard {...data} />
                 </Col>
               
             ))}
