@@ -5,8 +5,10 @@ const PlayerCard = ({name, img, statistics}) => {
     const[showImage, setShowImage] = useState(true);
     console.log(showImage);
 
+    const handleClick = () => setShowImage (!showImage)
+
     return (
-        <Card className="rounded-2 m-auto player-card" role="button" onClick = {()=>setShowImage(!showImage)} >
+        <Card className="rounded-2 m-auto player-card" role="button" onClick = {handleClick} >
             {showImage ? (  <Card.Img variant="top" src={img} className = "player-logo"/>
             ):(
                     
