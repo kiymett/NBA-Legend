@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 // const PlayerCard = ({name, img, statistics, showImage}) => {
 const PlayerCard = ({name, img, statistics}) => {
     const[showImage, setShowImage] = useState(true);
-    console.log(showImage);
+    // console.log(showImage);
 
     const handleClick = () => setShowImage (!showImage)
 

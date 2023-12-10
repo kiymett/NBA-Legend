@@ -10,20 +10,25 @@ import {useState} from 'react';
 const CardContainer = () => {
 
     const[search, setSearch] = useState("");
-    console.log(search)
+        console.log(search)
     // console.log(data)
     // const showImage =false
-   
+    const handleChange = (e) => {setSearch(e.target.value)
+    }
+   ///**console.log(search, outside )*/
+
+   const filteredData = data.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
+
   return (
     <>
      <Form.Control className ="w-50 m-auto"
           placeholder="Search a player.."
         //   onChange= {(e) => console.log(e.target.value)}
-        onChange= {(e) => setSearch(e.target.value)}
+        onChange= {handleChange}
         />
          <Container className = "rounded-4 my-4 p-3 card-container">
             <Row className ="justify-content-center g-3">
-                {data.map((data)=>(
+                {filteredData.map((data)=>(
                     <Col xl={3} lg={4} md={6}>
                     {/* <PlayerCard {...data} showImage= {showImage}/> */}
                     <PlayerCard {...data} />
