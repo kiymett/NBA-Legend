@@ -8,7 +8,7 @@ import PlayerCard from "./PlayerCard"
 
 const CardContainer = () => {
     // console.log(data)
-    const showImage =true
+    const showImage =false
    
   return (
     <Container className = "rounded-4 my-4 p-3 card-container">
@@ -22,7 +22,6 @@ const CardContainer = () => {
                 </Col>
               
             ))}
-            
             
         </Row>
     </Container>
