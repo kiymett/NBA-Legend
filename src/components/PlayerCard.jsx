@@ -6,7 +6,7 @@ const PlayerCard = ({name, img, statistics}) => {
     console.log(showImage);
 
     return (
-        <Card className="rounded-2 m-auto player-card" >
+        <Card className="rounded-2 m-auto player-card" role="button" onClick = {()=>setShowImage(false)} >
             {showImage ? (  <Card.Img variant="top" src={img} className = "player-logo"/>
             ):(
                     

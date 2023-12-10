@@ -1,15 +1,15 @@
-import React from 'react'
-import nbaLogo from '../assets/nba-logo.png'
-import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
 
-const Header = ()=>{
-    return (
-        <Container>
-         <Image src={nbaLogo} alt="nba" />
-        <h1>NBA Legends</h1>
-        </Container>
-    )
-}
 
-export default Header
+import nbaLogo from "../assets/nba-logo.png";
+import Image from "react-bootstrap/Image";
+import Container from "react-bootstrap/Container";
+
+const Header = () => {
+  return (
+    <Container>
+      <Image src={nbaLogo}></Image>
+      <h1 className="my-2 font-monospace display-4 fw-bold">NBA Legends</h1>
+    </Container>
+  );
+};
+export default Header;
